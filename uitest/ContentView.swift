@@ -13,12 +13,34 @@ struct ContentView: View {
 //            .padding()
 //        Text("Hello").padding().background(Color.blue)
       
-        Text("Hello, world!").padding(.all)
-            .background(Color.green).cornerRadius(10).foregroundColor(Color.white)
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            .background(Color.blue)
+//        Text("Hello, world!").padding(.all)
+//            .background(Color.green).cornerRadius(10).foregroundColor(Color.white)
+//            .padding(.all)
+//            .background(Color.blue)
+        VStack {
+            Spacer()
             
+            Image("logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
             
+            Spacer()
+            
+            HStack() {
+                Spacer()
+                Text("Hello")
+                Spacer()
+                Text("World!")
+                Spacer()
+            }
+            
+            Spacer()
+        }
+        
+        
+        
+       
+
     }
 }
 
